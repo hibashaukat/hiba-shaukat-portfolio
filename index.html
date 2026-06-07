@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Hiba Shaukat — Portfolio</title>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;600;700&family=Outfit:wght@300;400;500;600&display=swap" rel="stylesheet"/>
+  <link rel="stylesheet" href="style.css"/>
+</head>
+<body>
+
+  <!-- Cursor -->
+  <div class="cursor" id="cursor"></div>
+  <div class="cursor-dot" id="cursorDot"></div>
+
+  <!-- Nav -->
+  <nav id="navbar">
+    <div class="nav-inner">
+      <span class="nav-logo">HS<span class="dot">.</span></span>
+      <ul class="nav-links">
+        <li><a href="#about">About</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+      <button class="hamburger" id="hamburger">&#9776;</button>
+    </div>
+    <div class="mobile-menu" id="mobileMenu">
+      <a href="#about" onclick="closeMobile()">About</a>
+      <a href="#skills" onclick="closeMobile()">Skills</a>
+      <a href="#projects" onclick="closeMobile()">Projects</a>
+      <a href="#contact" onclick="closeMobile()">Contact</a>
+    </div>
+  </nav>
+
+  <!-- Hero -->
+  <section class="hero" id="home">
+    <div class="hero-bg">
+      <div class="orb orb1"></div>
+      <div class="orb orb2"></div>
+      <div class="orb orb3"></div>
+      <div class="grid-lines"></div>
+    </div>
+    <div class="hero-content">
+      <p class="hero-greeting reveal">Hello, I'm</p>
+      <h1 class="hero-name reveal">Hiba<br/><span class="outline">Shaukat</span></h1>
+      <p class="hero-title reveal">Frontend Developer <span class="amp">&</span> Creative Designer</p>
+      <p class="hero-sub reveal">CS Student at Hamdard University · Saylani Web Dev · Graphic Design</p>
+      <div class="hero-btns reveal">
+        <a href="#projects" class="btn-primary">View Projects</a>
+        <a href="#contact" class="btn-ghost">Get In Touch</a>
+      </div>
+      <div class="hero-scroll reveal">
+        <span>scroll</span>
+        <div class="scroll-line"></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- About -->
+  <section class="about section" id="about">
+    <div class="container">
+      <div class="section-label">01 — About</div>
+      <div class="about-grid">
+        <div class="about-left">
+          <h2 class="section-title">A little<br/><span class="gradient-text">about me</span></h2>
+          <div class="about-avatar">
+            <div class="avatar-ring"></div>
+            <div class="avatar-inner">
+              <svg viewBox="0 0 120 120" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <circle cx="60" cy="45" r="22" fill="#a855f7" opacity="0.9"/>
+                <ellipse cx="60" cy="95" rx="32" ry="22" fill="#7c3aed" opacity="0.85"/>
+                <circle cx="60" cy="45" r="18" fill="#f3e8ff"/>
+                <ellipse cx="60" cy="42" rx="10" ry="12" fill="#c084fc"/>
+                <circle cx="53" cy="40" r="2.5" fill="#1e0533"/>
+                <circle cx="67" cy="40" r="2.5" fill="#1e0533"/>
+                <path d="M54 50 Q60 56 66 50" stroke="#1e0533" stroke-width="1.5" stroke-linecap="round" fill="none"/>
+              </svg>
+            </div>
+          </div>
+        </div>
+        <div class="about-right">
+          <p class="about-text">
+            I'm a Computer Science student at Hamdard University and a passionate frontend developer. I'm currently learning Graphic Design while also pursuing Modern Web Development at Saylani Mass IT Training. I love building clean, functional interfaces and bringing creative ideas to life through code.
+          </p>
+          <div class="about-stats">
+            <div class="stat">
+              <span class="stat-num">6+</span>
+              <span class="stat-label">Projects Built</span>
+            </div>
+            <div class="stat">
+              <span class="stat-num">2+</span>
+              <span class="stat-label">Courses Active</span>
+            </div>
+            <div class="stat">
+              <span class="stat-num">1</span>
+              <span class="stat-label">AI Capstone</span>
+            </div>
+          </div>
+          <div class="about-tags">
+            <span class="tag">React.js</span>
+            <span class="tag">HTML & CSS</span>
+            <span class="tag">JavaScript</span>
+            <span class="tag">Python</span>
+            <span class="tag">Graphic Design</span>
+            <span class="tag">AI / LLM</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Skills -->
+  <section class="skills section" id="skills">
+    <div class="container">
+      <div class="section-label">02 — Skills</div>
+      <h2 class="section-title">What I <span class="gradient-text">work with</span></h2>
+      <div class="skills-grid">
+        <div class="skill-card">
+          <div class="skill-icon">⚡</div>
+          <h3>Frontend</h3>
+          <p>HTML5, CSS3, JavaScript ES6+, Responsive Design</p>
+        </div>
+        <div class="skill-card">
+          <div class="skill-icon">⚛️</div>
+          <h3>React.js</h3>
+          <p>Components, Props, useState, useEffect, Component Architecture</p>
+        </div>
+        <div class="skill-card">
+          <div class="skill-icon">🎨</div>
+          <h3>Design</h3>
+          <p>Graphic Design, UI/UX, Visual Branding, Creative Direction</p>
+        </div>
+        <div class="skill-card">
+          <div class="skill-icon">🤖</div>
+          <h3>AI & Python</h3>
+          <p>Streamlit, Groq API, LLaMA 4, Prompt Engineering</p>
+        </div>
+        <div class="skill-card">
+          <div class="skill-icon">🛠️</div>
+          <h3>Tools</h3>
+          <p>Git, GitHub, Netlify, Vercel, VS Code</p>
+        </div>
+        <div class="skill-card">
+          <div class="skill-icon">📚</div>
+          <h3>Learning</h3>
+          <p>Modern Web Dev at Saylani, Graphic Design, Advanced React</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Projects -->
+  <section class="projects section" id="projects">
+    <div class="container">
+      <div class="section-label">03 — Projects</div>
+      <h2 class="section-title">Things I've <span class="gradient-text">built</span></h2>
+
+      <div class="projects-grid">
+
+        <!-- Snap-to-Site AI — featured -->
+        <div class="project-card featured">
+          <div class="project-glow"></div>
+          <div class="project-header">
+            <span class="project-badge">AI Capstone</span>
+            <div class="project-links">
+              <a href="https://snaptosite.streamlit.app/" target="_blank" class="proj-link">Live ↗</a>
+            </div>
+          </div>
+          <h3 class="project-title">Snap-to-Site AI</h3>
+          <p class="project-desc">An intelligent web app that lets small business owners in Pakistan generate a complete professional website in under 2 minutes — just upload a product/menu photo and AI does the rest.</p>
+          <div class="project-tags">
+            <span>Python</span><span>Streamlit</span><span>Groq API</span><span>LLaMA 4</span><span>Vision AI</span>
+          </div>
+          <div class="project-collab">👥 Built with Saba Shahid · Hamdard University</div>
+        </div>
+
+        <!-- Todo App -->
+        <div class="project-card">
+          <div class="project-header">
+            <span class="project-badge">React</span>
+            <div class="project-links">
+              <a href="https://todooapp12.netlify.app/" target="_blank" class="proj-link">Live ↗</a>
+            </div>
+          </div>
+          <h3 class="project-title">Todo List App</h3>
+          <p class="project-desc">A functional Todo app with priority levels, filter tabs, progress bar, and a clean 3-component React architecture using props and useState.</p>
+          <div class="project-tags">
+            <span>React.js</span><span>Props</span><span>useState</span><span>Netlify</span>
+          </div>
+        </div>
+
+        <!-- Profile Card -->
+        <div class="project-card">
+          <div class="project-header">
+            <span class="project-badge">React</span>
+            <div class="project-links">
+              <a href="https://profile-card-app-gamma.vercel.app/" target="_blank" class="proj-link">Live ↗</a>
+            </div>
+          </div>
+          <h3 class="project-title">Dynamic Profile Card</h3>
+          <p class="project-desc">A React app displaying team profile cards with Follow/Unfollow, Dark/Light mode toggle, search bar filtering, and cartoon avatars.</p>
+          <div class="project-tags">
+            <span>React.js</span><span>useState</span><span>useEffect</span><span>Vercel</span>
+          </div>
+        </div>
+
+        <!-- Counter & Form -->
+        <div class="project-card">
+          <div class="project-header">
+            <span class="project-badge">React</span>
+            <div class="project-links">
+              <a href="https://react-counter-form-app.vercel.app/" target="_blank" class="proj-link">Live ↗</a>
+            </div>
+          </div>
+          <h3 class="project-title">Counter & Form App</h3>
+          <p class="project-desc">A React application with an interactive counter (increment, decrement, reset) and a form with controlled inputs and client-side validation.</p>
+          <div class="project-tags">
+            <span>React.js</span><span>useState</span><span>Form Validation</span><span>Vercel</span>
+          </div>
+        </div>
+
+        <!-- Calculator -->
+        <div class="project-card">
+          <div class="project-header">
+            <span class="project-badge">HTML/CSS/JS</span>
+            <div class="project-links">
+              <a href="https://hibashaukat.github.io/CodeAlpha_Calculator/" target="_blank" class="proj-link">Live ↗</a>
+            </div>
+          </div>
+          <h3 class="project-title">Calculator</h3>
+          <p class="project-desc">A sleek calculator with all arithmetic operations, real-time display, percent function, backspace, and full keyboard support.</p>
+          <div class="project-tags">
+            <span>HTML5</span><span>CSS3</span><span>JavaScript</span><span>CodeAlpha</span>
+          </div>
+        </div>
+
+        <!-- Image Gallery -->
+        <div class="project-card">
+          <div class="project-header">
+            <span class="project-badge">HTML/CSS/JS</span>
+            <div class="project-links">
+              <a href="https://hibashaukat.github.io/CodeAlpha_gallery/" target="_blank" class="proj-link">Live ↗</a>
+            </div>
+          </div>
+          <h3 class="project-title">Image Gallery</h3>
+          <p class="project-desc">A responsive masonry image gallery with category filters, lightbox view, next/prev navigation, hover overlays, and keyboard support.</p>
+          <div class="project-tags">
+            <span>HTML5</span><span>CSS3</span><span>JavaScript</span><span>CodeAlpha</span>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact -->
+  <section class="contact section" id="contact">
+    <div class="container">
+      <div class="section-label">04 — Contact</div>
+      <h2 class="section-title">Let's <span class="gradient-text">connect</span></h2>
+      <p class="contact-sub">Open to opportunities, collaborations, and conversations!</p>
+
+      <div class="contact-cards">
+        <a href="mailto:hibashaukat12@gmail.com" class="contact-card">
+          <span class="contact-icon">📧</span>
+          <span class="contact-label">Email</span>
+          <span class="contact-val">hibashaukat12@gmail.com</span>
+        </a>
+        <a href="https://github.com/hibashaukat" target="_blank" class="contact-card">
+          <span class="contact-icon">🐙</span>
+          <span class="contact-label">GitHub</span>
+          <span class="contact-val">github.com/hibashaukat</span>
+        </a>
+        <a href="https://www.linkedin.com/in/hiba-shaukat-7062653a3/" target="_blank" class="contact-card">
+          <span class="contact-icon">💼</span>
+          <span class="contact-label">LinkedIn</span>
+          <span class="contact-val">Hiba Shaukat</span>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <div class="footer-inner">
+      <span class="nav-logo">HS<span class="dot">.</span></span>
+      <p>Designed & Built by Hiba Shaukat · 2026</p>
+     
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
