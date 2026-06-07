@@ -2,7 +2,6 @@
 
 **Task 3: Build Your Own Portfolio Site**
 **Intern:** Hiba Shaukat
-**Internship ID:** APR26-FE28-18
 **Organization:** CodeAlpha
 
 ---
